@@ -1,0 +1,25 @@
+.splash {
+    position: absolute;
+    z-index: 2000;
+    background: white;
+    color: gray;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0
+}
+
+.splash-title {
+    text-align: center;
+    max-width: 500px;
+    margin: 15% auto;
+    padding: 20px
+}
+
+.splash-title h1{
+    font-size: 26px
+}
+
+.color-line {
+    border-radius:4px 4px 0 0
+}

@@ -1,0 +1,58 @@
+<div class="tab-pane fade in active">
+    <h3 class="head text-center">{{title}}</h3>
+    <h4 class="text-center">
+        Made with <i class="fa fa-heart heart" style="color:#f48260;"></i> by <a href="https://www.cc28tech.com" target="_blank">Cathy Wun</a>. Check out the tutorials <a href="https://www.cc28tech.com/introducing-angular-ui-router-series" target="_blank">here.</a>
+    </h4>
+    <p class="narrow text-center">
+        Here is a copy of the information you have entered:
+    </p>
+    <div class='row'>
+        <div class='col-xs-offset-1 col-xs-10 col-sm-offset-3 col-sm-8 col-md-offset-4 col-md-8'>
+            <div class="row">
+                <div class='col-xs-3 col-sm-2'>
+                    <div class="form-group">
+                        <label class="control-label" for="name">Name: </label> 
+                    </div>
+                </div>
+                <div class='col-xs-9 col-sm-10'>
+                    {{formData.firstName + ' ' + formData.lastName}}
+                </div>
+            </div>
+            <div class="row">
+                <div class='col-xs-3 col-sm-2'>
+                    <div class="form-group">
+                        <label class="control-label" for="email">Email: </label> 
+                    </div>
+                </div>
+                <div class='col-xs-9 col-sm-10'>
+                    {{formData.email}}
+                </div>
+           </div>     
+            <div class="row">
+                <div class='col-xs-3 col-sm-2'>
+                    <div class="form-group">
+                        <label class="control-label" for="work">Work: </label> 
+                    </div>
+                </div>
+                <div class='col-xs-9 col-sm-10'>
+                    {{formData.work}}
+                </div>
+           </div>     
+           <div class="row">
+                <div class='col-xs-3 col-sm-2'>
+                    <div class="form-group">
+                        <label class="control-label" for="address">Address: </label>
+                    </div>
+                </div>
+                <div class='col-xs-9 col-sm-10'>
+                    {{formData.street}}
+                    <br/>
+                    {{formData.city + ' ' + formData.state + ' ' + formData.zip}}
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="text-center">
+        <button class="btn btn-success btn-outline-rounded" [disabled]="!isFormValid" (click)="submit()"> Submit <span style="margin-left:10px;" class="glyphicon glyphicon-arrow-right"></span></button>
+    </div>
+</div>
